@@ -1,10 +1,6 @@
-<div align="center">
+ <div align="center"> <img src="banner.svg" alt="Abhay Chauhan" width="100%" /> </div>
 <!-- ==================== BANNER ==================== -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0D1117,50:161B22,100:1F6FEB&text=Abhay%20Chauhan&fontColor=FFFFFF&fontSize=60&animation=fadeIn&fontAlignY=40&desc=AI%20Developer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20Problem%20Solver&descAlignY=58">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:4F8CFF,50:70A5FF,100:A8C7FF&text=Abhay%20Chauhan&fontColor=FFFFFF&fontSize=60&animation=fadeIn&fontAlignY=40&desc=AI%20Developer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20Problem%20Solver&descAlignY=58">
-  <img width="100%" alt="Banner">
-</picture>
+
 
 <br>
 
