@@ -1,22 +1,20 @@
- <div align="center"> <img src="banner.svg" alt="Abhay Chauhan" width="100%" /> </div>
-<!-- ==================== BANNER ==================== -->
-
+<div align="center"> 
+  <img src="banner.svg" alt="Abhay Chauhan" width="100%" /> 
+</div>
 
 <br>
 
-# Hey there, I'm Abhay Chauhan 👋
+<div align="center">
+
+# Hey there, I'm Abhay Chauhan 👋 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNThnNzA0eHF4Y3c2N3JwcGN5aWQ5dDV4ZnNwNTR1Nm5uNW92N2hnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlNaQ6gWfllcjDO/giphy.gif" width="40" align="center" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=1F6FEB&center=true&vCenter=true&width=700&lines=AI+Developer;Full+Stack+Developer;Building+with+Python+%26+AI;Final-Year+BCA+(AI)+Student;Always+Learning+Something+New" alt="Typing SVG" />
-<td width="35%" align="center">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNThnNzA0eHF4Y3c2N3JwcGN5aWQ5dDV4ZnNwNTR1Nm5uNW92N2hnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlNaQ6gWfllcjDO/giphy.gif" width="10%" />
+<br><br>
 
-</td>
-<br>
-
-<img src="https://img.shields.io/github/followers/abhay-211?style=for-the-badge&logo=github&color=1F6FEB&labelColor=0D1117" />
-<img src="https://img.shields.io/github/stars/abhay-211?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&color=1F6FEB&labelColor=0D1117" />
-<img src="https://komarev.com/ghpvc/?username=abhay-211&style=for-the-badge&color=1F6FEB" />
+<img src="https://img.shields.io/github/followers/abhay-211?style=for-the-badge&logo=github&color=1F6FEB&labelColor=0D1117" alt="Followers" />
+<img src="https://img.shields.io/github/stars/abhay-211?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&color=1F6FEB&labelColor=0D1117" alt="Stars" />
+<img src="https://komarev.com/ghpvc/?username=abhay-211&style=for-the-badge&color=1F6FEB" alt="Profile Views" />
 
 </div>
 
@@ -30,7 +28,6 @@
 
 <table>
 <tr>
-
 <td width="100%">
 
 ### 👨‍💻 Developer Profile
@@ -58,7 +55,6 @@ I'm **Abhay Chauhan**, a final-year BCA (Artificial Intelligence) student at Inv
 - 🧠 DSA & Java for technical interviews
 
 </td>
-
 </tr>
 </table>
 
@@ -70,12 +66,10 @@ I'm **Abhay Chauhan**, a final-year BCA (Artificial Intelligence) student at Inv
 
 </div>
 
-
-### [🔤 SlangNorm AI](https:/slangnormai.vercel.app)
-Full-stack SaaS tool that normalizes internet slang into plain text using live AI inference.
-**Stack:** React/Vite · AI Inference API
+### [🔤 SlangNorm AI](https://slangnormai.vercel.app)
+Full-stack SaaS tool that normalizes internet slang into plain text using live AI inference.  
+**Stack:** React/Vite · AI Inference API  
 **Deployed:** Vercel
-
 
 ---
 
@@ -123,19 +117,7 @@ Full-stack SaaS tool that normalizes internet slang into plain text using live A
 
 ---
 
-<div align="center">
 
-## 📊 GitHub Analytics
-
-<br>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhay-211&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhay-211&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" />
-
-</div>
-
-<br>
 
 <div align="center">
 
@@ -163,7 +145,7 @@ Full-stack SaaS tool that normalizes internet slang into plain text using live A
 
 </div>
 
-<details>
+---
 
 <div align="center">
 
@@ -172,18 +154,14 @@ Full-stack SaaS tool that normalizes internet slang into plain text using live A
 <br>
 
 <a href="https://www.linkedin.com/in/abhay-chauhan-8937902b9/">
-<img src="https://img.shields.io/badge/LinkedIn-1F6FEB?style=for-the-badge&logo=linkedin&logoColor=white" />
+<img src="https://img.shields.io/badge/LinkedIn-1F6FEB?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
-<a href="mailto:[a.achauhan5121@gmail.com]">
-<img src="https://img.shields.io/badge/Email-1F6FEB?style=for-the-badge&logo=gmail&logoColor=white" />
+<a href="mailto:a.achauhan5121@gmail.com">
+<img src="https://img.shields.io/badge/Email-1F6FEB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
 
-</div>
-
----
-
-<div align="center">
+<br><br>
 
 ### ⚡ Building the Future, One Commit at a Time
 
