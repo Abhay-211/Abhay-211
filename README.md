@@ -152,16 +152,6 @@ Career assistant with resume tooling, PDF preview, and AI-generated feedback.
 
 <div align="center">
 
-## 🏆 GitHub Trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=abhay-211&theme=tokyonight&no-frame=true&column=7&margin-w=8" />
-
-</div>
-
-<br>
-
-<div align="center">
-
 ## 🔥 GitHub Streak
 
 <img src="https://streak-stats.demolab.com?user=abhay-211&theme=tokyonight&hide_border=true&ring=EF93C4&fire=FF69B4&currStreakLabel=F8BBD0&sideLabels=F8BBD0&dates=FFFFFF" />
