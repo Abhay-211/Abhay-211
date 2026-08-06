@@ -1,7 +1,5 @@
 <div align="center">
-
 <!-- ==================== BANNER ==================== -->
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0D1117,50:161B22,100:1F6FEB&text=Abhay%20Chauhan&fontColor=FFFFFF&fontSize=60&animation=fadeIn&fontAlignY=40&desc=AI%20Developer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20Problem%20Solver&descAlignY=58">
   <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:4F8CFF,50:70A5FF,100:A8C7FF&text=Abhay%20Chauhan&fontColor=FFFFFF&fontSize=60&animation=fadeIn&fontAlignY=40&desc=AI%20Developer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20Problem%20Solver&descAlignY=58">
@@ -13,7 +11,11 @@
 # Hey there, I'm Abhay Chauhan 👋
 
 <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=1F6FEB&center=true&vCenter=true&width=700&lines=AI+Developer;Full+Stack+Developer;Building+with+Python+%26+AI;Final-Year+BCA+(AI)+Student;Always+Learning+Something+New" alt="Typing SVG" />
+<td width="35%" align="center">
 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNThnNzA0eHF4Y3c2N3JwcGN5aWQ5dDV4ZnNwNTR1Nm5uNW92N2hnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlNaQ6gWfllcjDO/giphy.gif" width="10%" />
+
+</td>
 <br>
 
 <img src="https://img.shields.io/github/followers/abhay-211?style=for-the-badge&logo=github&color=1F6FEB&labelColor=0D1117" />
