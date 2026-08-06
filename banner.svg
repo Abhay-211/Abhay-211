@@ -1,121 +1,197 @@
-<svg width="850" height="360" viewBox="0 0 850 360" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="100%" height="100%">
   <defs>
-    <radialGradient id="mesh1" cx="10%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="mesh2" cx="90%" cy="80%" r="60%">
-      <stop offset="0%" stop-color="#00D0FF" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#00D0FF" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="mesh3" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#8A2BE2" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#8A2BE2" stop-opacity="0"/>
-    </radialGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@700&amp;family=Fira+Code:wght@400;500&amp;display=swap');
+      
+      /* Typography */
+      .name { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 72px; font-weight: 700; fill: url(#name-grad); }
+      .subtitle { font-family: 'Inter', -apple-system, sans-serif; font-size: 24px; font-weight: 500; fill: #D1D5DB; }
+      .badge-text { font-family: 'Inter', -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #10B981; letter-spacing: 1.5px; }
+      .pill-text { font-family: 'Inter', -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #E5E7EB; pointer-events: none; }
+      .code-text { font-family: 'Fira Code', monospace; font-size: 16px; }
+      
+      /* Interactive */
+      .pill { transition: all 0.3s ease; cursor: pointer; }
+      .pill:hover rect { fill: rgba(255, 255, 255, 0.08); stroke: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }
+      .code-card { transition: transform 0.5s ease; }
+      .code-card:hover { transform: translateY(-5px); }
+      
+      /* Animations */
+      .anim-float-1 { animation: float1 12s ease-in-out infinite; }
+      .anim-float-2 { animation: float2 15s ease-in-out infinite alternate; }
+      .anim-pulse { animation: pulse 2s infinite; }
+      .anim-pulse-slow { animation: pulse 4s infinite; }
+      .anim-spin { animation: spin 40s linear infinite; transform-origin: center; }
+      .anim-spin-reverse { animation: spin-reverse 50s linear infinite; transform-origin: center; }
+      
+      @keyframes float1 { 
+        0%, 100% { transform: translateY(0) translateX(0); } 
+        50% { transform: translateY(-30px) translateX(20px); } 
+      }
+      @keyframes float2 { 
+        0%, 100% { transform: translateY(0) translateX(0) scale(1); } 
+        50% { transform: translateY(30px) translateX(-30px) scale(1.05); } 
+      }
+      @keyframes pulse { 
+        0% { opacity: 0.4; transform: scale(0.95); } 
+        50% { opacity: 1; transform: scale(1.05); } 
+        100% { opacity: 0.4; transform: scale(0.95); } 
+      }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes spin-reverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    </style>
 
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="55%" stop-color="#8cb5ff"/>
-      <stop offset="100%" stop-color="#00d0ff"/>
+    <!-- Gradients -->
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#1F6FEB" />
+      <stop offset="100%" stop-color="#00D0FF" />
     </linearGradient>
 
-    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
-    </linearGradient>
+    <radialGradient id="orb-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0" />
+    </radialGradient>
 
-    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
+    <radialGradient id="orb-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D0FF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#00D0FF" stop-opacity="0" />
+    </radialGradient>
 
-    <filter id="blurBig" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="45"/>
+    <radialGradient id="orb-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8A2BE2" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8A2BE2" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters & Patterns -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+    </pattern>
+
+    <filter id="glass-shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
     </filter>
-    <filter id="blurSoft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.5"/>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-
-    <clipPath id="roundedFrame">
-      <rect x="0" y="0" width="850" height="360" rx="28"/>
-    </clipPath>
   </defs>
 
-  <g clip-path="url(#roundedFrame)">
-    <rect width="850" height="360" fill="#0d1117"/>
+  <!-- Base Background -->
+  <rect width="1280" height="400" fill="#0D1117" />
+  <rect width="1280" height="400" fill="url(#grid)" />
 
-    <circle cx="85" cy="72" r="220" fill="url(#mesh1)" filter="url(#blurBig)"/>
-    <circle cx="765" cy="288" r="260" fill="url(#mesh2)" filter="url(#blurBig)"/>
-    <circle cx="425" cy="180" r="240" fill="url(#mesh3)" filter="url(#blurBig)"/>
-
-    <circle cx="40" cy="20" r="90" fill="#1F6FEB" opacity="0.35" filter="url(#blurBig)">
-      <animate attributeName="cy" values="20;40;20" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="840" cy="120" r="110" fill="#8A2BE2" opacity="0.28" filter="url(#blurBig)">
-      <animate attributeName="cy" values="120;95;120" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="200" cy="400" r="100" fill="#00D0FF" opacity="0.25" filter="url(#blurBig)">
-      <animate attributeName="cx" values="200;230;200" dur="9s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="130" cy="70" r="4" fill="#93c5fd" filter="url(#blurSoft)">
-      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="70" cy="215" r="5" fill="#c084fc" filter="url(#blurSoft)">
-      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="635" cy="105" r="3.5" fill="#67e8f9" filter="url(#blurSoft)">
-      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="745" cy="255" r="4.5" fill="#60a5fa" filter="url(#blurSoft)">
-      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.8s" repeatCount="indefinite"/>
-    </circle>
-
-    <rect x="18" y="18" width="814" height="324" rx="26" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-
-    <circle cx="790" cy="95" r="55" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" opacity="0.6"/>
-    <circle cx="815" cy="270" r="26" fill="none" stroke="#00D0FF" stroke-width="2" opacity="0.4"/>
-
-    <rect x="56" y="52" width="188" height="30" rx="15" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
-    <circle cx="74" cy="67" r="4" fill="#4ade80">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="88" y="72" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2" fill="#d1d5db">OPEN TO COLLABORATE</text>
-
-    <text x="56" y="145" font-family="'Space Grotesk', Arial, sans-serif" font-size="56" font-weight="700" fill="url(#textGrad)">Abhay Chauhan</text>
-
-    <text x="58" y="180" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="#d1d5db">
-      AI Developer <tspan fill="#00D0FF">•</tspan> Full Stack Developer <tspan fill="#00D0FF">•</tspan> Problem Solver
-    </text>
-
-    <g font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#e5e7eb">
-      <rect x="58" y="205" width="98" height="38" rx="12" fill="url(#pillGrad)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="102" y="229" text-anchor="middle">Python</text>
-
-      <rect x="168" y="205" width="176" height="38" rx="12" fill="url(#pillGrad)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="256" y="229" text-anchor="middle">JAVA</text>
-
-      <rect x="356" y="205" width="164" height="38" rx="12" fill="url(#pillGrad)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="438" y="229" text-anchor="middle">React / Fullstack</text>
-
-      <rect x="532" y="205" width="164" height="38" rx="12" fill="url(#pillGrad)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="614" y="229" text-anchor="middle">APIs &amp; React</text>
-
-      <rect x="708" y="205" width="130" height="38" rx="12" fill="url(#pillGrad)" stroke="rgba(255,255,255,0.18)"/>
-      <text x="773" y="229" text-anchor="middle">Cloud Tech</text>
-    </g>
-
-    <rect x="58" y="268" width="600" height="42" rx="8" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.06)"/>
-    <text x="74" y="294" font-family="'Courier New', monospace" font-size="14">
-      <tspan fill="#f472b6">const</tspan>
-      <tspan fill="#93c5fd"> developer</tspan>
-      <tspan fill="#e5e7eb"> = { </tspan>
-      <tspan fill="#86efac">status</tspan>
-      <tspan fill="#e5e7eb">: </tspan>
-      <tspan fill="#fde047">"building the future"</tspan>
-      <tspan fill="#e5e7eb"> };</tspan>
-    </text>
+  <!-- Animated Orbs -->
+  <g class="anim-float-1">
+    <circle cx="1000" cy="80" r="350" fill="url(#orb-blue)" />
+  </g>
+  <g class="anim-float-2">
+    <circle cx="250" cy="350" r="400" fill="url(#orb-cyan)" />
+  </g>
+  <g class="anim-float-1" style="animation-delay: -6s">
+    <circle cx="750" cy="250" r="300" fill="url(#orb-violet)" />
   </g>
 
-  <rect x="0.75" y="0.75" width="848.5" height="358.5" rx="27" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <!-- Glowing Particles -->
+  <circle cx="150" cy="100" r="2" fill="#00D0FF" class="anim-pulse" />
+  <circle cx="450" cy="320" r="1.5" fill="#1F6FEB" class="anim-pulse" style="animation-delay: 0.5s;" />
+  <circle cx="700" cy="80" r="2.5" fill="#8A2BE2" class="anim-pulse" style="animation-delay: 1.2s;" />
+  <circle cx="1150" cy="340" r="2" fill="#00D0FF" class="anim-pulse-slow" style="animation-delay: 0.8s;" />
+  <circle cx="1200" cy="120" r="1.5" fill="#1F6FEB" class="anim-pulse" style="animation-delay: 1.5s;" />
+
+  <!-- Decorative Rings (Right Side) -->
+  <g transform="translate(1120, 200)">
+    <g class="anim-spin">
+      <circle cx="0" cy="0" r="180" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 12" />
+      <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(31,111,235,0.15)" stroke-width="2" stroke-dasharray="30 40" />
+    </g>
+    <g class="anim-spin-reverse">
+      <circle cx="0" cy="0" r="220" fill="none" stroke="rgba(0,208,255,0.08)" stroke-width="1" stroke-dasharray="4 16" />
+    </g>
+  </g>
+
+  <!-- Top Badge -->
+  <g transform="translate(80, 60)">
+    <rect width="215" height="34" rx="17" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" />
+    <!-- Glowing green dot -->
+    <circle cx="22" cy="17" r="4" fill="#10B981" filter="url(#glow)" />
+    <circle cx="22" cy="17" r="4" fill="#10B981" class="anim-pulse" />
+    <text x="40" y="21.5" class="badge-text">OPEN TO COLLABORATE</text>
+  </g>
+
+  <!-- Main Name & Subtitle -->
+  <text x="80" y="165" class="name">Abhay Chauhan</text>
+  <text x="82" y="220" class="subtitle">AI Developer • Full Stack Developer • Problem Solver</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(80, 280)">
+    <!-- Python -->
+    <g transform="translate(0, 0)" class="pill">
+      <rect width="90" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="45" y="24" text-anchor="middle" class="pill-text">Python</text>
+    </g>
+    <!-- Java -->
+    <g transform="translate(105, 0)" class="pill">
+      <rect width="75" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="37.5" y="24" text-anchor="middle" class="pill-text">Java</text>
+    </g>
+    <!-- React -->
+    <g transform="translate(195, 0)" class="pill">
+      <rect width="85" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="42.5" y="24" text-anchor="middle" class="pill-text">React</text>
+    </g>
+    <!-- Node.js -->
+    <g transform="translate(295, 0)" class="pill">
+      <rect width="95" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="47.5" y="24" text-anchor="middle" class="pill-text">Node.js</text>
+    </g>
+    <!-- FastAPI -->
+    <g transform="translate(405, 0)" class="pill">
+      <rect width="95" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="47.5" y="24" text-anchor="middle" class="pill-text">FastAPI</text>
+    </g>
+    <!-- SQL -->
+    <g transform="translate(515, 0)" class="pill">
+      <rect width="70" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="35" y="24" text-anchor="middle" class="pill-text">SQL</text>
+    </g>
+    <!-- AI/ML -->
+    <g transform="translate(600, 0)" class="pill">
+      <rect width="85" height="38" rx="19" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="42.5" y="24" text-anchor="middle" class="pill-text">AI/ML</text>
+    </g>
+  </g>
+
+  <!-- Glass Code Card -->
+  <g transform="translate(820, 100)" filter="url(#glass-shadow)" class="code-card">
+    
+    <!-- Glass Background Block -->
+    <rect width="380" height="200" rx="16" fill="rgba(13, 17, 23, 0.6)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <rect width="380" height="200" rx="16" fill="url(#orb-blue)" opacity="0.15" />
+    
+    <!-- Window Controls -->
+    <circle cx="24" cy="24" r="6" fill="#FF5F56" />
+    <circle cx="44" cy="24" r="6" fill="#FFBD2E" />
+    <circle cx="64" cy="24" r="6" fill="#27C93F" />
+    <line x1="0" y1="48" x2="380" y2="48" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+    <!-- Syntax Highlighted Code -->
+    <text x="32" y="86" class="code-text">
+      <tspan fill="#FF79C6">const</tspan> <tspan fill="#8BE9FD">developer</tspan> <tspan fill="#F8F8F2"> = {</tspan>
+    </text>
+    
+    <text x="56" y="120" class="code-text">
+      <tspan fill="#50FA7B">focus</tspan><tspan fill="#F8F8F2">: </tspan><tspan fill="#F1FA8C">"AI &amp; Full Stack"</tspan><tspan fill="#F8F8F2">,</tspan>
+    </text>
+    
+    <text x="56" y="154" class="code-text">
+      <tspan fill="#50FA7B">status</tspan><tspan fill="#F8F8F2">: </tspan><tspan fill="#F1FA8C">"Building the Future"</tspan>
+    </text>
+
+    <text x="32" y="188" class="code-text" fill="#F8F8F2">};</text>
+  </g>
 </svg>
