@@ -141,11 +141,11 @@ I'm **Abhay Chauhan**, a passionate developer focused on creating impactful soft
 
 ## 🐍 Contribution Snake
 
-<img src="https://raw.githubusercontent.com/[Abhay-211]/[Abhay-211]/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+<img src="https://raw.githubusercontent.com/Abhay-211/Abhay-211/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
 
 </div>
 
-### GitHub Action for Snake Animation
+
 
 
 
