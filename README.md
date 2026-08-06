@@ -131,7 +131,7 @@ I'm **Abhay Chauhan**, a passionate developer focused on creating impactful soft
 
 ## 📈 Activity Graph
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=[Abhay-211]&bg_color=0d1117&color=F8BBD0&line=FF69B4&point=EF93C4&area=true&hide_border=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhay-211&bg_color=0d1117&color=F8BBD0&line=FF69B4&point=EF93C4&area=true&hide_border=true" />
 
 </div>
 
