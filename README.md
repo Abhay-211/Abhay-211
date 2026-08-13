@@ -109,13 +109,8 @@
 ---
 
 <div align="center">
-  <h2>📊 GitHub Analytics & Activity</h2>
-  <br>
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhay-211&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhay-211&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  
-  <br><br>
+ <h2>📊 GitHub Analytics & Activity</h2>
+<br>
   
   <img src="https://streak-stats.demolab.com?user=abhay-211&theme=tokyonight&hide_border=true&ring=EF93C4&fire=FF69B4&currStreakLabel=F8BBD0&sideLabels=F8BBD0&dates=FFFFFF" />
   
